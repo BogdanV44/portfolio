@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -30,6 +31,15 @@ ul a {
   color: #fff;
 }
 
+#projects-a-tag, #skills-a-tag {
+  position: absolute;
+  margin-top: -100px;
+}
+
+#skills-a-tag {
+  margin-top: -40px;
+}
+
 /*Header*/
 header {
   width: 100%;
@@ -37,6 +47,8 @@ header {
   background-image: -webkit-gradient(linear, right top, left top, from(#cd64fc), to(#8a51dc));
   background-image: linear-gradient(to left, #cd64fc, #8a51dc);
   z-index: 2;
+  -webkit-box-shadow: 0px 0px 2px 2px #8a51dc;
+          box-shadow: 0px 0px 2px 2px #8a51dc;
 }
 
 header #logo {
@@ -44,7 +56,7 @@ header #logo {
 }
 
 header nav {
-  width: 700px;
+  width: auto;
   font-size: 22px;
   text-transform: uppercase;
   font-weight: 300;
@@ -59,7 +71,7 @@ header nav ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 14px;
+  margin-top: 17px;
 }
 
 header nav a {
@@ -85,13 +97,13 @@ header nav a:hover {
 #background-top {
   width: 100%;
   height: 800px;
-  background-image: url("../img/bg3.jpg");
+  background-image: url("../img/bg5.jpg");
   background-size: cover;
   background-position: center;
 }
 
 #top-massage {
-  margin-top: 200px;
+  margin-top: 230px;
   color: #fff;
   -webkit-animation-name: tekst-load;
   -webkit-animation-duration: 2s;
@@ -106,7 +118,7 @@ header nav a:hover {
 }
 
 #top-massage #span1 {
-  font-size: 80px;
+  font-size: 70px;
   color: #8a51dc;
   font-weight: 900;
   text-transform: uppercase;
@@ -179,7 +191,7 @@ header nav a:hover {
 }
 
 #skills h2 {
-  font-size: 40px;
+  font-size: 38px;
   text-transform: uppercase;
   background-image: -webkit-gradient(linear, left top, right top, from(#cd64fc), to(#8a51dc));
   background-image: linear-gradient(to right, #cd64fc, #8a51dc);
@@ -190,6 +202,7 @@ header nav a:hover {
   -moz-text-fill-color: transparent;
   text-align: center;
   margin-top: 70px;
+  margin-bottom: 10px;
 }
 
 #skills .block-01 {
@@ -220,11 +233,10 @@ header nav a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 150px;
 }
 
 #skills .icon-skills ul li {
-  font-size: 40px;
+  font-size: 38px;
   text-transform: uppercase;
   background-image: -webkit-gradient(linear, left top, right top, from(#cd64fc), to(#8a51dc));
   background-image: linear-gradient(to right, #cd64fc, #8a51dc);
@@ -235,6 +247,7 @@ header nav a:hover {
   -moz-text-fill-color: transparent;
   text-align: center;
   margin-top: 70px;
+  margin-bottom: 10px;
   font-size: 160px;
   margin-top: 0px;
 }
@@ -249,21 +262,25 @@ header nav a:hover {
 }
 
 #skills .tekst-skills p {
-  font-size: 20px;
+  font-size: 19px;
 }
 
 /*Projects*/
 #projects {
   width: 100%;
   background-color: #5c5a67;
-  margin-top: 60px;
+  margin-top: 100px;
   padding-bottom: 60px;
   background-image: -webkit-gradient(linear, left top, right top, from(#cd64fc), to(#8a51dc));
   background-image: linear-gradient(to right, #cd64fc, #8a51dc);
+  height: auto;
+  -webkit-box-shadow: 0px 0px 6px 6px #8a51dc;
+          box-shadow: 0px 0px 6px 6px #8a51dc;
+  max-height: 480px;
 }
 
 #projects h2 {
-  font-size: 40px;
+  font-size: 38px;
   text-transform: uppercase;
   background-image: -webkit-gradient(linear, left top, right top, from(#cd64fc), to(#8a51dc));
   background-image: linear-gradient(to right, #cd64fc, #8a51dc);
@@ -274,6 +291,7 @@ header nav a:hover {
   -moz-text-fill-color: transparent;
   text-align: center;
   margin-top: 70px;
+  margin-bottom: 10px;
   position: relative;
   background-image: -webkit-gradient(linear, left top, right top, from(#fff), to(#fff));
   background-image: linear-gradient(to right, #fff, #fff);
@@ -294,7 +312,7 @@ header nav a:hover {
 #projects .blocks ul {
   text-align: center;
   font-size: 22px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 #projects .blocks ul a {
@@ -316,6 +334,8 @@ header nav a:hover {
 #projects .blocks .project-image {
   position: relative;
   width: 100%;
+  -webkit-box-shadow: 5px 6px 4px #7d36e2;
+          box-shadow: 5px 6px 4px #7d36e2;
 }
 
 #projects .blocks img {
@@ -329,8 +349,8 @@ header nav a:hover {
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(205, 100, 252, 0.7)), to(rgba(138, 81, 220, 0.7)));
-  background-image: linear-gradient(to right, rgba(205, 100, 252, 0.7), rgba(138, 81, 220, 0.7));
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(205, 100, 252, 0.72)), to(rgba(138, 81, 220, 0.72)));
+  background-image: linear-gradient(to right, rgba(205, 100, 252, 0.72), rgba(138, 81, 220, 0.72));
   overflow: hidden;
   width: 0;
   height: 100%;
@@ -340,16 +360,6 @@ header nav a:hover {
 
 #projects .blocks .project-image:hover .overlay {
   width: 100%;
-  -webkit-transform: scale(1.025);
-          transform: scale(1.025);
-}
-
-#projects .blocks .project-image:hover img {
-  width: 100%;
-  -webkit-transform: scale(1.025);
-          transform: scale(1.025);
-  -webkit-transition: 0.7s ease;
-  transition: 0.7s ease;
 }
 
 #projects .blocks .overlay-text {
@@ -395,7 +405,7 @@ header nav a:hover {
 }
 
 #about-me-tekst h2 {
-  font-size: 40px;
+  font-size: 38px;
   text-transform: uppercase;
   background-image: -webkit-gradient(linear, left top, right top, from(#cd64fc), to(#8a51dc));
   background-image: linear-gradient(to right, #cd64fc, #8a51dc);
@@ -406,6 +416,7 @@ header nav a:hover {
   -moz-text-fill-color: transparent;
   text-align: center;
   margin-top: 70px;
+  margin-bottom: 10px;
   margin-top: 10px;
   color: #fff;
 }
@@ -415,12 +426,13 @@ header nav a:hover {
   margin-top: 20px;
 }
 
+/*Contact*/
 #contact {
   width: 100%;
 }
 
 #contact h2 {
-  font-size: 40px;
+  font-size: 38px;
   text-transform: uppercase;
   background-image: -webkit-gradient(linear, left top, right top, from(#cd64fc), to(#8a51dc));
   background-image: linear-gradient(to right, #cd64fc, #8a51dc);
@@ -431,6 +443,8 @@ header nav a:hover {
   -moz-text-fill-color: transparent;
   text-align: center;
   margin-top: 70px;
+  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 #contact .wrapper {
@@ -441,10 +455,11 @@ header nav a:hover {
 #contact #contact-tekst {
   margin-top: 40px;
   font-size: 30px;
+  margin-left: 50px;
 }
 
 #contact form {
-  width: 35%;
+  width: 32%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -457,29 +472,31 @@ header nav a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-right: 100px;
+  margin-right: 50px;
   margin-top: 40px;
   border-top: 2px solid #5c5a67;
   border-bottom: 2px solid #5c5a67;
   border-radius: 4px;
-  padding: 30px;
+  padding: 40px 30px;
 }
 
 #contact form input {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   height: 40px;
   font-family: 'Montserrat', sans-serif;
   font-size: 22px;
   border: 0px;
   border-bottom: 2px solid #5c5a67;
   border-radius: 4px;
+  padding: 2px;
 }
 
 #contact form textarea {
   font-family: 'Montserrat', sans-serif;
   font-size: 22px;
   border-radius: 4px;
+  padding: 2px;
   width: 100%;
 }
 
@@ -537,6 +554,7 @@ header nav a:hover {
   margin-left: 10px;
 }
 
+/*Footer*/
 footer {
   width: 100%;
   height: 80px;
@@ -557,7 +575,11 @@ footer p {
 }
 
 .icons-footer {
-  width: 15%;
+  width: 22%;
+}
+
+.icons-footer ul {
+  text-align: center;
 }
 
 .icons-footer ul li {
@@ -568,5 +590,173 @@ footer p {
 
 .icons-footer ul li a:hover {
   color: #cd64fc;
+}
+
+@media screen and (max-width: 1290px) {
+  #skills .block-01 {
+    width: 45%;
+  }
+  #skills #margin-resp {
+    margin: 0px auto;
+  }
+  #projects {
+    padding-bottom: 0px;
+    max-height: none;
+  }
+  #projects .blocks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #projects .blocks .project {
+    width: 80%;
+    margin-bottom: 50px;
+  }
+  #projects .blocks .project ul {
+    margin-top: 25px;
+  }
+  #projects .blocks .project .project-image {
+    -webkit-box-shadow: 0px 0px 6px 3.5px #7d36e2;
+            box-shadow: 0px 0px 6px 3.5px #7d36e2;
+  }
+  #contact #contact-tekst {
+    margin-left: 0px;
+  }
+  #contact #contact-tekst p {
+    font-size: 23px;
+  }
+  #contact form {
+    margin-right: 0;
+    width: 32%;
+  }
+  #contact form input {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1107px) {
+  header .wrapper {
+    text-align: center;
+    display: block;
+  }
+  header #logo {
+    margin-top: 10px;
+  }
+  header nav {
+    margin: 5px auto 15px auto;
+  }
+  header nav ul {
+    margin-top: 0px;
+    font-size: 24px;
+  }
+  .wrapper {
+    width: 85%;
+  }
+  #contact #contact-tekst {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  #contact #contact-tekst p {
+    font-size: 22px;
+  }
+  #contact form {
+    border: none;
+    border: 2px solid #5c5a67;
+    padding: 5px 15px;
+    margin-left: 10px;
+  }
+  footer p {
+    font-size: 15px;
+  }
+  footer .icons-footer ul li {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #aboutme-a-tag {
+    position: absolute;
+    margin-top: -70px;
+  }
+  #background-top {
+    background-size: 1500px 600px;
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+  }
+  #background-top #top-massage {
+    background-color: rgba(235, 235, 235, 0.8);
+    padding: 20px;
+    border-radius: 7px;
+    -webkit-box-shadow: 0px 0px 3px 1.3px #8a51dc;
+            box-shadow: 0px 0px 3px 1.3px #8a51dc;
+    border-radius: 7px;
+  }
+  #background-top #top-massage #span1 {
+    font-size: 65px;
+  }
+  #background-top #top-massage #span2 {
+    font-size: 22px;
+  }
+  #background-top #top-massage li {
+    margin-top: 22px;
+  }
+  #background-top #top-massage li a {
+    padding: 7px 10px;
+    font-size: 22px;
+  }
+  #skills .blocks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #skills .blocks .block-01 {
+    -webkit-box-shadow: 0px 0px 3px 1.3px #8a51dc;
+            box-shadow: 0px 0px 3px 1.3px #8a51dc;
+    border-radius: 7px;
+    padding: 15px;
+    border-radius: 7px;
+    width: 60%;
+    margin-bottom: 50px;
+  }
+  #skills .blocks .block-01 .icon-skills ul {
+    display: block;
+    margin-bottom: -20px;
+  }
+  #skills .blocks .block-01 .icon-skills ul li {
+    margin-bottom: 0px;
+  }
+  #skills .blocks .block-01 .tekst-skills h3 {
+    font-size: 36px;
+  }
+  #skills .blocks .block-01 .tekst-skills p {
+    font-size: 22px;
+  }
+  #skills .blocks .block-01:hover {
+    -webkit-box-shadow: 0px 0px 2.5px 2px #7d36e2;
+            box-shadow: 0px 0px 2.5px 2px #7d36e2;
+  }
+  #contact #contact-tekst {
+    margin: 30px auto;
+  }
+  #contact #contact-tekst .info {
+    text-align: center;
+    display: block;
+    margin-top: 15px;
+  }
+  #contact #contact-tekst .info p {
+    margin: 2.5px 0px 5px 0px;
+  }
+  #contact form {
+    width: 96%;
+    border: none;
+    border-bottom: 2px solid #5c5a67;
+    border-radius: 0px;
+    margin-top: 30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
