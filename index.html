@@ -3,6 +3,9 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport"
+    content="width=device-width,
+    initial-scale=1.0"/>
     <title>Bogdan Vujnovic | Portfolio</title>
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -11,9 +14,10 @@
      rel="stylesheet" />
      <!-- Icons -->
      <script src="https://kit.fontawesome.com/7e98e52368.js" crossorigin="anonymous"></script>
-    
+
     <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
     
+    <link rel="stylesheet" href="assets/css/responsive.scss" type="text/css"/>
 </head>
 <body>
     <div id="background-top">
@@ -22,16 +26,16 @@
                 <div id="logo">
                     <ul>
                         <li>
-                            <a href="#"><img src="assets/img/logo3.png" alt="logo" height="50px"/></a>
+                            <a href="#"><img src="assets/img/logo4.png" alt="logo" height="50px"/></a>
                         </li>
                     </ul>
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">About me</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#skills-a-tag">Skills</a></li>
+                        <li><a href="#projects-a-tag">Projects</a></li>
+                        <li><a href="#about-me-a-tag">About me</a></li>
+                        <li><a href="#contact-a-tag">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -41,7 +45,7 @@
                 <h1>hi, I'm<br/><span id="span1">Bogdan<br/> Vujnovic</span><br/>
                 <span id="span2">Front-end developer, <br/>based in Belgrade</span></h1>
                 <ul>
-                    <li><a href="#">my Projects</a></li>
+                    <li><a href="#projects-a-tag">my Projects</a></li>
                 </ul>
             </div>
         </div> 
@@ -49,6 +53,7 @@
     <main>
         <div class="wrapper">
             <div id="skills">
+                <div id="skills-a-tag"></div>
                 <h2>Skills</h2>
                 <div class="blocks">
                     <div class="block-01">
@@ -74,7 +79,7 @@
                             markup language like HTML. CSS is a cornerstone technology of the World Wide Web.</p>
                         </div>    
                     </div>
-                    <div class="block-01">
+                    <div class="block-01" id="margin-resp">
                         <div class="icon-skills">
                             <ul><li><i class="fa-brands fa-html5"></i></li></ul>
                         </div>
@@ -90,6 +95,7 @@
             </div>
         </div>
         <div id="projects">
+            <div id="projects-a-tag"></div>
             <h2>Projects</h2>
             <div class="blocks">
                 <div class="project">
@@ -99,7 +105,7 @@
                             <div class="overlay-text">Car Wash <br/>-Website-</div>
                         </div>
                     </div>  
-                    <ul><li><a href="#">View Project</a></li></ul>
+                    <ul><li><a href="https://bogdanv44.github.io/FullWash/" target="_blank">View Project</a></li></ul>
                 </div>
                 <div class="project">
                     <div class="project-image">  
@@ -108,11 +114,12 @@
                             <div class="overlay-text">Portfolio</div>
                         </div>
                     </div>  
-                    <ul><li><a href="#">View Project</a></li></ul>
+                    <ul><li><a href="https://bogdanv44.github.io/portfolio/#" target="_blank">View Project</a></li></ul>
                 </div>
             </div>
         </div>
         <div id="about-me">
+            <div id="about-me-a-tag"></div>
             <div class="wrapper">    
                 <div id="slika"></div>
                 <div id="about-me-tekst">
@@ -133,6 +140,7 @@
             </div>
         </div>
         <div id="contact">
+            <div id="contact-a-tag"></div>
             <h2>Contact</h2>
             <div class="wrapper">
                 <div id="contact-tekst">
