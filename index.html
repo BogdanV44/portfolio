@@ -12,10 +12,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
      rel="stylesheet" />
-     <!-- Icons -->
-     <script src="https://kit.fontawesome.com/7e98e52368.js" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/7e98e52368.js" crossorigin="anonymous"></script>
+
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png"/>
 
     <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+    
+    <link rel="stylesheet" href="assets/css/responsive.scss" type="text/css"/>
 </head>
 <body>
     <div id="background-top">
@@ -54,7 +59,7 @@
                 <div id="skills-a-tag"></div>
                 <h2>Skills</h2>
                 <div class="blocks">
-                    <div class="block-01">
+                    <div class="block-01 margin-resp">
                         <div class="icon-skills">
                             <ul><li><i class="fa-brands fa-html5"></i></li></ul>
                         </div>
@@ -66,7 +71,7 @@
                             technologies for the World Wide Web</p>
                         </div>   
                     </div>
-                    <div class="block-01">
+                    <div class="block-01 margin-resp">
                         <div class="icon-skills">
                             <ul><li><i class="fa-brands fa-css3-alt"></i></li></ul>
                         </div>
@@ -77,9 +82,9 @@
                             markup language like HTML. CSS is a cornerstone technology of the World Wide Web.</p>
                         </div>    
                     </div>
-                    <div class="block-01" id="margin-resp">
+                    <div class="block-01 margin-resp">
                         <div class="icon-skills">
-                            <ul><li><i class="fa-brands fa-html5"></i></li></ul>
+                            <ul><li><i class="fa-solid fa-file-code"></i></li></ul>
                         </div>
                         <div class="tekst-skills">   
                             <h3>JavaScript</h3>
@@ -168,19 +173,22 @@
         <div class="wrapper">
             <div class="icons-footer">
                 <ul>
-                    <li><a href="#"><i class="fa-brands fa-instagram-square"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-twitter-square"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-facebook-square"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram-square"></i></a></li>
+                    <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter-square" target="_blank"></i></a></li>
+                    <li><a href="https://rs.linkedin.com/"><i class="fa-brands fa-linkedin" target="_blank"></i></a></li>
+                </ul>
+                <ul id="responsive-list">
+                    <li><a href="#" target="_blank" class="hovertext" data-hover="SASS"><i class="fa-solid fa-laptop-code"></i></a></li>
+                    <li><a href="#" target="_blank" class="hovertext" data-hover="CSS"><i class="fa-brands fa-css3-alt"></i></a></li>
+                    <li><a href="#" target="_blank" class="hovertext" data-hover="Sitemap"><i class="fa-solid fa-sitemap"></i></a></li>
                 </ul>
             </div>
-            <p>Copyright Bogdan Vujnovic | All Rights Reserved</p>
-            <div class="icons-footer">
+            <p>Copyright Bogdan Vujnovic <span id="span-footer">| All Rights Reserved</span></p>
+            <div class="icons-footer" id="for-responsive">
                 <ul>
-                    <li><a href="#"><i class="fa-brands fa-instagram-square"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-twitter-square"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-facebook-square"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#" target="_blank" class="hovertext" data-hover="SASS"><i class="fa-solid fa-laptop-code"></i></a></li>
+                    <li><a href="#" target="_blank" class="hovertext" data-hover="CSS"><i class="fa-brands fa-css3-alt"></i></a></li>
+                    <li><a href="#" target="_blank" class="hovertext" data-hover="Sitemap"><i class="fa-solid fa-sitemap"></i></a></li>
                 </ul>
             </div>
         </div>
