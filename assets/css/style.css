@@ -57,7 +57,7 @@ header #logo {
 
 header nav {
   width: auto;
-  font-size: 22px;
+  font-size: 17px;
   text-transform: uppercase;
   font-weight: 300;
 }
@@ -71,7 +71,11 @@ header nav ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 17px;
+  margin-top: 20px;
+}
+
+header nav ul li {
+  margin-left: 10px;
 }
 
 header nav a {
@@ -84,8 +88,8 @@ header nav a:hover {
   background-image: -webkit-gradient(linear, right top, left top, from(#cd64fc), to(#8a51dc));
   background-image: linear-gradient(to left, #cd64fc, #8a51dc);
   background-size: 100%;
-  -webkit-box-shadow: 1px 2px 2px 1px #7d36e2;
-          box-shadow: 1px 2px 2px 1px #7d36e2;
+  -webkit-box-shadow: 1.5px 1.5px 2px 1.8px #7d36e2;
+          box-shadow: 1.5px 1.5px 2px 1.8px #7d36e2;
   -webkit-transition: 0.25s;
   transition: 0.25s;
   -webkit-transition-duration: .3s;
@@ -154,8 +158,8 @@ header nav a:hover {
 #top-massage a:hover {
   border: 2px solid #8a51dc;
   color: #fff;
-  -webkit-box-shadow: 1px 2px 2px 1px #7d36e2;
-          box-shadow: 1px 2px 2px 1px #7d36e2;
+  -webkit-box-shadow: 1.5px 1.5px 2px 1.8px #7d36e2;
+          box-shadow: 1.5px 1.5px 2px 1.8px #7d36e2;
   -webkit-transition: 0.25s;
   transition: 0.25s;
   background-image: -webkit-gradient(linear, right top, left top, from(#cd64fc), to(#8a51dc));
@@ -187,6 +191,7 @@ header nav a:hover {
 
 #skills {
   margin: 0px auto;
+  width: 100%;
 }
 
 #skills h2 {
@@ -205,9 +210,11 @@ header nav a:hover {
 }
 
 #skills .block-01 {
-  width: 30%;
+  width: 22%;
   -webkit-transition: 250ms;
   transition: 250ms;
+  margin-left: 20px;
+  margin-bottom: 10px;
 }
 
 #skills .block-01:hover {
@@ -235,20 +242,15 @@ header nav a:hover {
 }
 
 #skills .icon-skills ul li {
-  font-size: 38px;
-  text-transform: uppercase;
-  background-image: -webkit-gradient(linear, left top, right top, from(#cd64fc), to(#8a51dc));
-  background-image: linear-gradient(to right, #cd64fc, #8a51dc);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  text-align: center;
-  margin-top: 70px;
-  margin-bottom: 10px;
-  font-size: 160px;
+  font-size: 65px;
   margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#skills #java ul li i {
+  color: #5c5a67;
+  font-size: 45px;
+  margin-bottom: 0px;
 }
 
 #skills .tekst-skills {
@@ -256,12 +258,8 @@ header nav a:hover {
 }
 
 #skills .tekst-skills h3 {
-  font-size: 36px;
+  font-size: 20px;
   margin-bottom: 10px;
-}
-
-#skills .tekst-skills p {
-  font-size: 19px;
 }
 
 /*Projects*/
@@ -324,8 +322,8 @@ header nav a:hover {
   background-image: -webkit-gradient(linear, right top, left top, from(#cd64fc), to(#8a51dc));
   background-image: linear-gradient(to left, #cd64fc, #8a51dc);
   background-size: 100%;
-  -webkit-box-shadow: 1px 2px 2px 1px #7d36e2;
-          box-shadow: 1px 2px 2px 1px #7d36e2;
+  -webkit-box-shadow: 1.5px 1.5px 2px 1.8px #7d36e2;
+          box-shadow: 1.5px 1.5px 2px 1.8px #7d36e2;
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
@@ -355,6 +353,15 @@ header nav a:hover {
   height: 100%;
   -webkit-transition: .5s ease;
   transition: .5s ease;
+  text-align: center;
+}
+
+#projects .blocks .overlay a {
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+  position: relative;
+  top: 20px;
 }
 
 #projects .blocks .project-image:hover .overlay {
@@ -377,30 +384,51 @@ header nav a:hover {
 
 /*About me*/
 #about-me {
-  width: 100%;
-  margin-top: 120px;
+  width: 80%;
+  margin: 120px auto 0px auto;
 }
 
 #about-me .wrapper {
   width: 60%;
-  border: 3px solid #5c5a67;
+  border: 3px solid;
   border-radius: 25px;
-  background-color: #5c5a67;
+  padding: 50px 0px 50px 0px;
+  background-color: #e3e3e3;
+  border-color: #8a51dc;
 }
 
 #slika {
-  width: 35%;
-  height: 500px;
-  background-color: #fff;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
+  width: 40%;
+  height: auto;
+  background-image: -webkit-gradient(linear, right top, left top, from(#cd64fc), to(#8a51dc));
+  background-image: linear-gradient(to left, #cd64fc, #8a51dc);
+  border-radius: 0% 135px 135px 0%;
+  margin: auto 0px;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 7px;
+  -webkit-box-shadow: 0px 0px 3px 1.3px #8a51dc;
+          box-shadow: 0px 0px 3px 1.3px #8a51dc;
+}
+
+#slika #img {
+  width: 250px;
+  margin: auto 0px;
+  height: 250px;
+  background-image: url("../img/about-me-img1.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
 }
 
 #about-me-tekst {
-  width: 50%;
+  width: 40%;
   text-align: center;
   margin-right: 60px;
-  color: #fff;
 }
 
 #about-me-tekst h2 {
@@ -416,13 +444,27 @@ header nav a:hover {
   text-align: center;
   margin-top: 70px;
   margin-bottom: 10px;
-  margin-top: 10px;
-  color: #fff;
+  margin-top: 0px;
 }
 
 #about-me-tekst p {
-  font-size: 22px;
+  font-size: 18px;
   margin-top: 20px;
+  color: black;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+}
+
+#about-me-tekst p span {
+  color: #8a51dc;
+  font-weight: 520;
+}
+
+#about-me-tekst p #span5 {
+  color: #7d36e2;
+  font-size: 22px;
+  letter-spacing: 0.5px;
+  font-weight: 550;
 }
 
 /*Contact*/
@@ -449,76 +491,9 @@ header nav a:hover {
 #contact .wrapper {
   border-top: 3px solid #5c5a67;
   width: 70%;
-}
-
-#contact #contact-tekst {
-  margin-top: 40px;
-  font-size: 30px;
-  margin-left: 50px;
-}
-
-#contact form {
-  width: 32%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-right: 50px;
-  margin-top: 40px;
-  border-top: 2px solid #5c5a67;
-  border-bottom: 2px solid #5c5a67;
-  border-radius: 4px;
-  padding: 40px 30px;
-}
-
-#contact form input {
-  width: 100%;
-  margin-bottom: 30px;
-  height: 40px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 22px;
-  border: 0px;
-  border-bottom: 2px solid #5c5a67;
-  border-radius: 4px;
-  padding: 2px;
-}
-
-#contact form textarea {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 22px;
-  border-radius: 4px;
-  padding: 2px;
-  width: 100%;
-}
-
-#contact form #kontakt-forma-btn {
-  width: 40%;
-  margin: 15px auto;
-  font-size: 20px;
-  border: 2px solid #5c5a67;
-  border-radius: 14px;
-  color: #5c5a67;
-}
-
-#contact form #kontakt-forma-btn:hover {
-  background-image: -webkit-gradient(linear, left top, right top, from(#cd64fc), to(#8a51dc));
-  background-image: linear-gradient(to right, #cd64fc, #8a51dc);
-  -webkit-transition: .2s;
-  transition: .2s;
-  border-color: #8a51dc;
-  color: #fff;
-  -webkit-box-shadow: 1px 2px 2px 1px #7d36e2;
-          box-shadow: 1px 2px 2px 1px #7d36e2;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #contact .info {
@@ -533,11 +508,11 @@ header nav a:hover {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 #contact .info i {
-  font-size: 42px;
+  font-size: 40px;
   background-image: -webkit-gradient(linear, right top, left top, from(#cd64fc), to(#8a51dc));
   background-image: linear-gradient(to left, #cd64fc, #8a51dc);
   background-size: 100%;
@@ -548,7 +523,7 @@ header nav a:hover {
 }
 
 #contact .info p {
-  font-size: 24px;
+  font-size: 22px;
   margin-top: 9px;
   margin-left: 10px;
 }
@@ -641,9 +616,6 @@ footer p #span-footer {
 }
 
 @media screen and (max-width: 1290px) {
-  #skills .block-01 {
-    width: 45%;
-  }
   #skills .margin-resp {
     margin: 20px auto 0px auto;
   }
@@ -669,18 +641,32 @@ footer p #span-footer {
     -webkit-box-shadow: 0px 0px 6px 3.5px #7d36e2;
             box-shadow: 0px 0px 6px 3.5px #7d36e2;
   }
+  #about-me .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 0px;
+  }
+  #about-me .wrapper #slika {
+    margin: 0px auto;
+    width: auto;
+    height: 300px;
+    border-radius: 0px 0px 135px 135px;
+  }
+  #about-me .wrapper #slika #img {
+    margin-top: 50px;
+  }
+  #about-me .wrapper #about-me-tekst {
+    width: 77%;
+    margin: 0px auto;
+    margin-top: 20px;
+  }
   #contact #contact-tekst {
     margin-left: 0px;
   }
   #contact #contact-tekst p {
     font-size: 23px;
-  }
-  #contact form {
-    margin-right: 0;
-    width: 32%;
-  }
-  #contact form input {
-    font-size: 18px;
   }
 }
 
@@ -702,16 +688,20 @@ footer p #span-footer {
   .wrapper {
     width: 85%;
   }
+  #skills .blocks {
+    margin-top: 20px;
+  }
   #skills .block-01 ul li {
-    font-size: 130px;
+    font-size: 80px;
     margin-bottom: 0px;
   }
   #skills .block-01 .tekst-skills h3 {
-    font-size: 28px;
-    margin-top: -15px;
+    font-size: 16px;
+    margin-top: -10px;
   }
-  #skills .block-01 .tekst-skills p {
-    font-size: 17px;
+  #skills #java ul li i {
+    font-size: 70px;
+    margin-bottom: 2px;
   }
   #contact #contact-tekst {
     margin-top: 0px;
@@ -719,12 +709,6 @@ footer p #span-footer {
   }
   #contact #contact-tekst p {
     font-size: 22px;
-  }
-  #contact form {
-    border: none;
-    border: 2px solid #5c5a67;
-    padding: 5px 15px;
-    margin-left: 10px;
   }
   footer p {
     font-size: 15px;
@@ -747,10 +731,9 @@ footer p #span-footer {
   #background-top #top-massage {
     background-color: rgba(235, 235, 235, 0.85);
     padding: 20px;
-    border-radius: 14px;
     -webkit-box-shadow: 0px 0px 3px 1.3px #8a51dc;
             box-shadow: 0px 0px 3px 1.3px #8a51dc;
-    border-radius: 7px;
+    border-radius: 14px;
   }
   #background-top #top-massage #span1 {
     font-size: 52px;
@@ -765,23 +748,29 @@ footer p #span-footer {
     padding: 7px 10px;
     font-size: 20px;
   }
-  #contact #contact-tekst {
+  main #contact #contact-tekst {
     margin: 30px auto;
   }
-  #contact #contact-tekst .info {
+  main #contact #contact-tekst .info {
     text-align: center;
     display: block;
     margin-top: 15px;
   }
-  #contact #contact-tekst .info p {
+  main #contact #contact-tekst .info p {
     margin: 2.5px 0px 5px 0px;
   }
-  #contact form {
-    width: 96%;
+  main #contact .wrapper form {
+    width: 100%;
     border: none;
     border-bottom: 2px solid #5c5a67;
     border-radius: 0px;
-    margin-top: 30px;
+    padding: 10px 0px;
+  }
+  #contact #contact-tekst .info i {
+    font-size: 30px;
+  }
+  #contact #contact-tekst .info p {
+    font-size: 18px;
   }
 }
 
@@ -798,10 +787,10 @@ footer p #span-footer {
     margin-top: 160px;
   }
   #skills .blocks .block-01 {
-    width: 75%;
+    width: 22%;
     -webkit-box-shadow: 0px 0px;
             box-shadow: 0px 0px;
-    background-color: #ebebeb;
+    background-color: #e3e3e3;
     padding: 15px;
     border-radius: 14px;
   }
@@ -814,8 +803,31 @@ footer p #span-footer {
     -webkit-transform: scale(1.015);
             transform: scale(1.015);
   }
+  #projects .blocks ul a {
+    font-size: 17px;
+  }
   #projects .blocks .project {
     width: 100%;
+  }
+  #about-me .wrapper {
+    width: 75%;
+  }
+  #about-me .wrapper #slika {
+    height: 265px;
+  }
+  #about-me .wrapper #slika #img {
+    width: 180px;
+    height: 180px;
+    margin: 85px 0px;
+  }
+  #about-me .wrapper #about-me-tekst {
+    width: 90%;
+  }
+  #about-me .wrapper #about-me-tekst p {
+    font-size: 17px;
+  }
+  #about-me .wrapper #about-me-tekst #span5 {
+    font-size: 20px;
   }
   footer {
     height: auto;
@@ -876,6 +888,7 @@ footer p #span-footer {
 @media screen and (max-width: 562px) {
   #skills h2, #projects h2, #about-me h2, #contact h2 {
     font-size: 30px;
+    margin-bottom: 10px;
   }
   header .wrapper {
     width: 92%;
@@ -892,7 +905,6 @@ footer p #span-footer {
     background-size: 0%;
     -webkit-box-shadow: 0px 0px;
             box-shadow: 0px 0px;
-    border-bottom: 1px solid #fff;
     border-radius: 0px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -918,14 +930,22 @@ footer p #span-footer {
     margin-top: -160px;
   }
   #skills .blocks .block-01 {
-    width: 80%;
+    width: 35%;
+    padding: 10px;
+    margin-top: 5px;
   }
   #skills .blocks .block-01 ul li {
-    margin-top: -25px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   #skills .blocks .block-01 ul li i {
-    font-size: 105px;
+    font-size: 50px;
+  }
+  #skills .blocks .block-01 #java ul li i {
+    font-size: 40px;
+    margin-bottom: 2px;
   }
   #skills .blocks .block-01 h3 {
     font-size: 20px;
@@ -936,18 +956,6 @@ footer p #span-footer {
   }
   #contact .wrapper {
     width: 85%;
-  }
-  #contact #contact-tekst .info i {
-    font-size: 30px;
-  }
-  #contact #contact-tekst .info p {
-    font-size: 18px;
-  }
-  #contact form input {
-    font-size: 18px;
-  }
-  #contact form textarea {
-    font-size: 18px;
   }
   footer {
     margin-top: 100px;
@@ -978,10 +986,19 @@ footer p #span-footer {
   }
   #skills h2 {
     margin-top: -50px;
-    margin-bottom: -30px;
   }
-  #projects .blocks ul li {
-    font-size: 18px;
+  #projects .blocks .project ul {
+    margin-top: 10px;
+  }
+  #projects .blocks .project ul li a {
+    font-size: 14px;
+  }
+  #about-me .wrapper {
+    width: 95%;
+  }
+  #about-me .wrapper #slika {
+    -webkit-box-shadow: 1px 0.4px 3px 1px #8a51dc;
+            box-shadow: 1px 0.4px 3px 1px #8a51dc;
   }
   #contact #contact-tekst .info i {
     font-size: 28px;
