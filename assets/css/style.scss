@@ -326,9 +326,9 @@ header{
         width: 250px;
         margin: auto 0px;
         height: 250px;
-        background-image: url('../img/about-me-img1.jpg');
+        background-image: url('../img/about1.jpg');
         background-size: cover;
-        background-position: center;
+        background-position: top;
         border-radius: 50%;
     }
 }
@@ -601,25 +601,14 @@ footer{
                 margin-top: 15px;
                 p{
                     margin: 2.5px 0px 5px 0px;
+                    font-size: 18px;
+                }
+                i{
+                    font-size: 30px;
                 }
             }
         }
-        .wrapper form{
-            width: 100%;
-            border: none;
-            border-bottom: 2px solid $sivaBoja;
-            border-radius: 0px;
-            padding: 10px 0px;
-        }
     } 
-    #contact #contact-tekst .info{
-        i{
-            font-size: 30px;
-        }
-        p{
-            font-size: 18px;
-        }
-    }
 }
 @media screen and(max-width: 774px){
     header{
@@ -660,7 +649,7 @@ footer{
         }
     }  
     #about-me .wrapper{
-        width: 75%;
+        width: 85%;
         #slika{
             height: 265px;
             #img{
@@ -827,7 +816,7 @@ footer{
         }
     }    
     #about-me .wrapper{
-        width: 95%;
+        width: 100%;
         #slika{
             box-shadow: 1px 0.4px 3px 1px $tamnoLjubicasta;
         }
