@@ -419,9 +419,9 @@ header nav a:hover {
   width: 250px;
   margin: auto 0px;
   height: 250px;
-  background-image: url("../img/about-me-img1.jpg");
+  background-image: url("../img/about1.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: top;
   border-radius: 50%;
 }
 
@@ -758,19 +758,10 @@ footer p #span-footer {
   }
   main #contact #contact-tekst .info p {
     margin: 2.5px 0px 5px 0px;
-  }
-  main #contact .wrapper form {
-    width: 100%;
-    border: none;
-    border-bottom: 2px solid #5c5a67;
-    border-radius: 0px;
-    padding: 10px 0px;
-  }
-  #contact #contact-tekst .info i {
-    font-size: 30px;
-  }
-  #contact #contact-tekst .info p {
     font-size: 18px;
+  }
+  main #contact #contact-tekst .info i {
+    font-size: 30px;
   }
 }
 
@@ -810,7 +801,7 @@ footer p #span-footer {
     width: 100%;
   }
   #about-me .wrapper {
-    width: 75%;
+    width: 85%;
   }
   #about-me .wrapper #slika {
     height: 265px;
@@ -994,7 +985,7 @@ footer p #span-footer {
     font-size: 14px;
   }
   #about-me .wrapper {
-    width: 95%;
+    width: 100%;
   }
   #about-me .wrapper #slika {
     -webkit-box-shadow: 1px 0.4px 3px 1px #8a51dc;
